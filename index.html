@@ -109,7 +109,7 @@
         group.add(sphere);
         scene.add(group);
 
-        camera.position.z = 25;
+        camera.position.z = 15;
 
         const mouse = {
             x: undefined,
@@ -122,11 +122,13 @@
             sphere.rotation.y += 0.003;
             group.rotation.x = mouse.y * 0.3;
             group.rotation.y = mouse.x * 0.5;
-            // gsap.to(group.rotation, {
-            //  x: -mouse.y * 0.3, 
-            //  y: mouse.x * 0.5,
-            // duration: 2
-            //})
+            /*
+            gsap.to(group.rotation, {
+                x: -mouse.y * 0.3,
+                y: mouse.x * 0.5,
+                duration: 2
+            })
+            */
         }
         animate();
 
